@@ -15,7 +15,7 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text|-------|
 |image|string|-------|
 |created_at|timestamps|null: false|
 |user_id|integer|null: false, foreign_key: true|
@@ -29,7 +29,7 @@
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :messages, dependent: :destroy
+- has_many :messages
 - has_many :users, through: :users_groups
 - has_many :users_groups
 
