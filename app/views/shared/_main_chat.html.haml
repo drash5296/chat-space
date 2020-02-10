@@ -1,4 +1,35 @@
 .main-chat
-  .main-chat.group-info
-  .main-chat.message-list
-  .main-chat.message-form
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        グループ名を表示
+      %ul.main-header__left-box__member-list
+        今のメンバーを表示
+    = link_to "#" do
+      .main-header__edit-btn Edit
+  .messages
+    .message1
+      .message1__upper-info
+        .message1__upper-info__talker アカウント名を表示
+        .message1__upper-info__date 投稿日時を表示
+      %p.message1__text 投稿内容を表示
+    .message2
+      .message2__upper-info
+        .message2__upper-info__talker アカウント名を表示
+        .message2__upper-info__date 投稿日時を表示
+      %p.message2__text 投稿内容を表示
+    .message3
+      .message3__upper-info
+        .message3__upper-info__talker アカウント名を表示
+        .message3__upper-info__date 投稿日時を表示
+      %p.message3__text 投稿内容を表示
+    -# messageの繰り返し記述をどうやって短く書くか？
+    -# haml内でrubyを使えば書けそう？
+  .form
+    %form.new-message
+      .input-box
+        %input{placeholder: "type a message", type: "text", class: "input-box__text"}
+        %lavel{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
