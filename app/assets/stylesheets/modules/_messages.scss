@@ -9,14 +9,12 @@
 .chat-side {
   height: 100vh;
   width: 300px;
-  background-color: #253141;
 }
 
 .side-header {
-  height: 100px;
-  width: 300px;
-  padding: 0 20px;
   background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
 
@@ -46,14 +44,17 @@ li {
   height: calc(100vh - 100px);
   padding: 20px;
   font-weight: bold;
+
   .group {
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 40px;
+
     &__group-name {
       font-size: 15px;
       padding-bottom: 5px;
     }
+
     &__latest-message {
       font-size: 11px;
     }
@@ -63,7 +64,6 @@ li {
 .main-chat {
   height: 100vh;
   width: calc(100vw - 300px);
-  background-color: #ffffff;
 }
 
 .main-header {
@@ -72,14 +72,17 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #eeeeee;
+  
   &__left-box {
     margin-top: 35px;
+
     &__current-group {
       font-size: 20px;
       color: #333333;
       margin-bottom: 15px;
       font-weight: normal;
     }
+    
     &__member-list {
       font-size: 12px;
       color: #999999;
@@ -90,7 +93,8 @@ li {
 a {
   text-decoration: none;
 }
-a .main-header__edit-btn {
+
+.main-header__edit-btn {
   font-size: 16px;
   color: #38aef0;
   text-decoration: none;
@@ -112,20 +116,24 @@ a .main-header__edit-btn {
 
 .message1, .message2, .message3 {
   padding-bottom: 40px;
+
   &__upper-info {
     display: flex;
     margin-bottom: 12px;
+
     &__talker {
       font-size: 16px;
       font-weight: bold;
       color: #333333;
     }
+
     &__date {
       margin-left: 10px;
       color: #999999;
       font-size: 12px;
     }
   }
+
   &__text {
     color: #434a54;
     font-size: 14px;
@@ -148,6 +156,7 @@ a .main-header__edit-btn {
   display: flex;
   position: relative;
   width: 100%;
+
   &__text {
     height: 50px;
     width: 100%;
@@ -155,12 +164,14 @@ a .main-header__edit-btn {
     color: #434a54;
     border-style: none;
     }
+    
   &__image {
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 1.3rem;
+    
     &__file{
       display: none;
     }
