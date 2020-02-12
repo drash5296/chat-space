@@ -144,7 +144,7 @@ a {
   padding: 20px 40px;
 }
 
-.new-message {
+.new_message {
   display: flex;
 }
 
@@ -182,4 +182,8 @@ a {
   background-color: #38aef0;
   color: white;
   cursor: pointer;
+}
+
+.user-name {
+  display: inline;
 }
