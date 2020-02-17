@@ -62,12 +62,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
+  gem 'capybara'
+  gem 'faker', "~> 2.8"
 end
 
 group :development do
   gem 'web-console'
-end
-
-group :test do
-  gem 'faker', "~> 2.8"
 end
