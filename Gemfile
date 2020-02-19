@@ -58,6 +58,10 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
