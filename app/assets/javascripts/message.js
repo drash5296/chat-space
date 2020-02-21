@@ -106,7 +106,7 @@ $(function(){
                     </div>
                   </div>`
     } else if (message.content) {
-      var html = `<div class="message" data-message-id=${message.id}
+      var html = `<div class="message" data-message-id=${message.id}> 
                    <div class="upper-message">
                      <div class="upper-message__user-name">
                       ${message.user_name}

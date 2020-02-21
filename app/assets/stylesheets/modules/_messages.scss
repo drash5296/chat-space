@@ -111,14 +111,14 @@ a {
   overflow: scroll;
 }
 
-.message1, .message2, .message3 {
+.message {
   padding-bottom: 40px;
 
-  &__upper-info {
+  .upper-message {
     display: flex;
     margin-bottom: 12px;
 
-    &__talker {
+    &__user-name {
       font-size: 16px;
       font-weight: bold;
       color: #333333;
@@ -130,13 +130,16 @@ a {
       font-size: 12px;
     }
   }
-
-  &__text {
+  .lower-message {
+    &__content {
     color: #434a54;
     font-size: 14px;
     margin-bottom: 10px;
+    }
   }
 }
+
+
 
 .form {
   height: 90px;
